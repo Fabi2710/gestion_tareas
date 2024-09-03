@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="progreso.html">Informe Progreso</a>
+        <h1>Gestión de Tareas</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Nueva tarea..." required>
+            <input type="text" id="assignedToInput" placeholder="Asignar a..." required>
+            <input type="date" id="dueDateInput" placeholder="Fecha de vencimiento..." required>
+            <select id="statusInput" required>
+                <option value="Pendiente">Pendiente</option>
+                <option value="En Progreso">En Progreso</option>
+                <option value="Completada">Completada</option>
+            </select>
+            <button type="submit">Agregar Tarea</button>
+        </form>
+        <ul id="taskList"></ul>
+        <div id="reportSection">
+            <h2>Informe de Progreso</h2>
+            <button id="generateReport">Generar Informe</button>
+            <div id="report"></div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+
+
+</body>
+</html>
